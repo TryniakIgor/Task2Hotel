@@ -1,0 +1,135 @@
+$fonts: 'Poppins', Helvertica, sans-serif;
+$primary-color: linear-gradient(to bottom, #027aa1, #01527a);
+
+a {
+    color: black;
+}
+
+ul,
+ol {
+    padding: 0;
+    list-style: none;
+    color: #6d3232;
+}
+
+body {
+    font-family: $fonts;
+    background: $primary-color;
+    color: white;
+}
+
+header {
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: flex-start;
+}
+
+.link__header {
+    margin-left: 30px;
+}
+
+.link__card {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link__item {
+    margin-top: 10px;
+    border-radius: 10px;
+    color: #e4e4e4;
+}
+
+.room {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    row-gap: 15px;
+    justify-content: space-around;
+}
+
+.room__card {
+    border: 4px solid #ccc;
+    border-radius: 10px;
+    max-width: 360px;
+
+}
+
+.room__title {
+    text-align: center;
+}
+
+.room__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.room__description {
+    text-align: center;
+}
+
+.link {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    justify-content: space-around;
+}
+
+.link__item {
+    color: white;
+    margin-left: 5px;
+}
+
+.link__ref {
+    color: #ccc;
+}
+
+
+.footer {
+    background-color: #fff;
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.discrabe {
+    padding: 30px;
+}
+
+.link__footer {
+    margin-left: 30px;
+}
+
+.site-nav {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.site-nav__item {
+    margin-left: 30px;
+}
+
+.copy {
+    color: black;
+}
+
+@media screen and (min-width:1280px) {
+    .room {
+        flex-direction: row;
+    }
+
+    .link {
+        flex-direction: row;
+    }
+}
